@@ -97,6 +97,21 @@
             ],
             "scripts": []
           }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "tsConfig": ".storybook/tsconfig.json",
+            "browserTarget": "storybook-playground:build:production",
+            "port": 6006
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "tsConfig": ".storybook/tsconfig.json",
+            "browserTarget": "storybook-playground:build:production"
+          }
         }
       }
     }

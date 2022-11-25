@@ -1,0 +1,14 @@
+// Extends on the base app.json, but includes all .ts files
+// instead of only the ones imported in our app. Used for IDE
+// to apply the correct TS config for new files.
+{
+  "extends": "./tsconfig.app.json",
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "src/testing/**/*",
+    "src/storybook/**/*",
+    "src/**/*.spec.ts"
+  ]
+}
