@@ -1,4 +1,8 @@
 module.exports = {
+  "typescript": {
+    check: true,
+    checkOptions: { tsconfig: "/.storybook/tsconfig.json" }
+  },
   "stories": [
     "../src/**/*.stories.mdx",
     "../src/**/*.stories.@(js|jsx|ts|tsx)"
